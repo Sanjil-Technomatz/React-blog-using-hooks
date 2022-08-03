@@ -1,0 +1,17 @@
+#main {
+  background-image: url("2.webp");
+  background-size: 100% 100%;
+  float: left;
+  overflow: scroll;
+  height: 400px;
+  padding: 10px;
+  color: white;
+  text-align: left;
+  width: 600px;
+  margin: 70px 154px;
+}
+#button {
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+}
