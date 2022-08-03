@@ -7,7 +7,7 @@ function Login(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  function handleClick() {
+  const handleClick = () => {
     if (
       email === JSON.parse(localStorage.getItem("email")) &&
       password === JSON.parse(localStorage.getItem("password"))
@@ -16,7 +16,7 @@ function Login(props) {
     } else {
       alert("Wrong email or password");
     }
-  }
+  };
 
   return (
     <>

@@ -8,14 +8,14 @@ function Signup(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  function handleClick() {
+  const handleClick = () => {
     localStorage.setItem("name", JSON.stringify(name));
     localStorage.setItem("email", JSON.stringify(email));
     localStorage.setItem("password", JSON.stringify(password));
     if (name !== "" && email !== "" && password !== "") {
       props.history.push("/login");
     }
-  }
+  };
 
   return (
     <>
